@@ -10,7 +10,7 @@ class CusTextTheme {
     headlineSmall: const TextStyle()
         .copyWith(fontSize: 18, fontWeight: FontWeight.w600, color: CusColors.textPrimary),
     titleLarge: const TextStyle()
-        .copyWith(fontSize: 16, fontWeight: FontWeight.w600, color: CusColors.textSecondary),
+        .copyWith(fontSize: 18, fontWeight: FontWeight.w600, color: CusColors.textSecondary),
     titleMedium: const TextStyle()
         .copyWith(fontSize: 16, fontWeight: FontWeight.w500, color: CusColors.textSecondary),
     titleSmall: const TextStyle()

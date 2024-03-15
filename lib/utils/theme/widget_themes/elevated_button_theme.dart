@@ -18,7 +18,7 @@ class CusElevatedButtonTheme {
         color: CusColors.borderPrimary,
         width: 1,
       ),
-      padding: const EdgeInsets.all(CusSizes.xs),
+      padding: const EdgeInsets.all(CusSizes.sm),
       textStyle: const TextStyle(
           fontSize: CusSizes.fontSizeMd, fontWeight: FontWeight.w600, color: CusColors.textWhite),
       shape: const RoundedRectangleBorder(

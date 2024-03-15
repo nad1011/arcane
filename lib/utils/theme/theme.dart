@@ -15,6 +15,7 @@ class CusTheme {
 
   // Light theme
   static final lightTheme = ThemeData(
+      fontFamily: 'Poppins',
       useMaterial3: true,
       brightness: Brightness.light,
       primaryColor: CusColors.primary,
@@ -30,6 +31,7 @@ class CusTheme {
 
   // Dark theme
   static final darkTheme = ThemeData(
+      fontFamily: 'Poppins',
       useMaterial3: true,
       brightness: Brightness.dark,
       primaryColor: CusColors.primary,
