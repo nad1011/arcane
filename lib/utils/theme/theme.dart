@@ -1,11 +1,12 @@
-import 'package:arcane/utils/theme/custom_themes/appbar_theme.dart';
-import 'package:arcane/utils/theme/custom_themes/bottom_sheet_theme.dart';
-import 'package:arcane/utils/theme/custom_themes/checkbox_theme.dart';
-import 'package:arcane/utils/theme/custom_themes/chip_theme.dart';
-import 'package:arcane/utils/theme/custom_themes/elevated_button_theme.dart';
-import 'package:arcane/utils/theme/custom_themes/outlined_button_theme.dart';
-import 'package:arcane/utils/theme/custom_themes/text_field_theme.dart';
-import 'package:arcane/utils/theme/custom_themes/text_theme.dart';
+import 'package:arcane/utils/constants/colors.dart';
+import 'package:arcane/utils/theme/widget_themes/appbar_theme.dart';
+import 'package:arcane/utils/theme/widget_themes/bottom_sheet_theme.dart';
+import 'package:arcane/utils/theme/widget_themes/checkbox_theme.dart';
+import 'package:arcane/utils/theme/widget_themes/chip_theme.dart';
+import 'package:arcane/utils/theme/widget_themes/elevated_button_theme.dart';
+import 'package:arcane/utils/theme/widget_themes/outlined_button_theme.dart';
+import 'package:arcane/utils/theme/widget_themes/text_field_theme.dart';
+import 'package:arcane/utils/theme/widget_themes/text_theme.dart';
 import 'package:flutter/material.dart';
 
 class CusTheme {
@@ -16,7 +17,7 @@ class CusTheme {
   static final lightTheme = ThemeData(
       useMaterial3: true,
       brightness: Brightness.light,
-      primaryColor: Colors.green,
+      primaryColor: CusColors.primary,
       scaffoldBackgroundColor: Colors.white,
       textTheme: CusTextTheme.lightTheme,
       elevatedButtonTheme: CusElevatedButtonTheme.lightTheme,
@@ -31,7 +32,7 @@ class CusTheme {
   static final darkTheme = ThemeData(
       useMaterial3: true,
       brightness: Brightness.dark,
-      primaryColor: Colors.deepPurple,
+      primaryColor: CusColors.primary,
       scaffoldBackgroundColor: Colors.black,
       textTheme: CusTextTheme.darkTheme,
       elevatedButtonTheme: CusElevatedButtonTheme.darkTheme,

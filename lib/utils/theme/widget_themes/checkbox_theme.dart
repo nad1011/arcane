@@ -1,3 +1,5 @@
+import 'package:arcane/utils/constants/colors.dart';
+import 'package:arcane/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class CusCheckboxTheme {
@@ -5,17 +7,17 @@ class CusCheckboxTheme {
 
   /// Customizable Light Text Theme
   static CheckboxThemeData lightCheckboxTheme = CheckboxThemeData(
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(CusSizes.borderRadiusXl)),
     checkColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
-        return Colors.white;
+        return CusColors.light;
       } else {
-        return Colors.black;
+        return CusColors.dark;
       }
     }),
     fillColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
-        return Colors.green;
+        return CusColors.primary;
       } else {
         return Colors.transparent;
       }
@@ -24,17 +26,17 @@ class CusCheckboxTheme {
 
   /// Customizable Dark Text Theme
   static CheckboxThemeData darkCheckboxTheme = CheckboxThemeData(
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(CusSizes.borderRadiusXl)),
     checkColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
-        return Colors.white;
+        return CusColors.light;
       } else {
-        return Colors.black;
+        return CusColors.dark;
       }
     }),
     fillColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
-        return Colors.green;
+        return CusColors.primary;
       } else {
         return Colors.transparent;
       }

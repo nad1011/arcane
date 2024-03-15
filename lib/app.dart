@@ -10,6 +10,11 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: CusTheme.lightTheme,
       darkTheme: CusTheme.darkTheme,
+      home: const Scaffold(
+        body: Center(
+          child: Text('Hello, World!'),
+        ),
+      ),
     );
   }
 }
