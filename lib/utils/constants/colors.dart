@@ -8,7 +8,7 @@ class CusColors {
 
   // Text color
   static const Color textPrimary = Color(0xFF070404);
-  static const Color textSecondary = Color(0xFF969696);
+  static const Color textSecondary = Color(0xFFAFAFAF);
   static const Color textWhite = Color(0xFFEFFDF6);
 
   // Background color
@@ -27,7 +27,7 @@ class CusColors {
 
   // Border color
   static const Color borderPrimary = Color(0xFFD9D9D9);
-  static const Color borderSecondary = Color(0xFFE6E6E6);
+  static const Color borderSecondary = Color(0xFFD2D2D2);
 
   // Error and validation color
   static const Color error = Color(0xFFD32F2F);

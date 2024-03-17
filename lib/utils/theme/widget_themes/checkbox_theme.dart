@@ -7,7 +7,8 @@ class CusCheckboxTheme {
 
   /// Customizable Light Text Theme
   static CheckboxThemeData lightCheckboxTheme = CheckboxThemeData(
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(CusSizes.borderRadiusXl)),
+    shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(CusSizes.borderRadiusSm)),
     checkColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
         return CusColors.light;
@@ -26,7 +27,8 @@ class CusCheckboxTheme {
 
   /// Customizable Dark Text Theme
   static CheckboxThemeData darkCheckboxTheme = CheckboxThemeData(
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(CusSizes.borderRadiusXl)),
+    shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(CusSizes.borderRadiusSm)),
     checkColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
         return CusColors.light;

@@ -19,7 +19,7 @@ class OnBoardingSkip extends StatelessWidget {
           OnBoardingController.instance.skipPage();
         },
         child:
-            Text(CusTexts.skip, style: Theme.of(context).textTheme.titleLarge),
+            Text(CusTexts.skip, style: Theme.of(context).textTheme.titleMedium),
       ),
     );
   }

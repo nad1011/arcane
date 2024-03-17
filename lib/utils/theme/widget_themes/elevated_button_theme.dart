@@ -15,14 +15,17 @@ class CusElevatedButtonTheme {
       disabledBackgroundColor: CusColors.buttonDisabled,
       disabledForegroundColor: CusColors.buttonDisabled,
       side: const BorderSide(
-        color: CusColors.borderPrimary,
-        width: 1,
+        color: CusColors.white,
+        width: 0,
       ),
       padding: const EdgeInsets.all(CusSizes.sm),
       textStyle: const TextStyle(
-          fontSize: CusSizes.fontSizeMd, fontWeight: FontWeight.w600, color: CusColors.textWhite),
+          fontSize: CusSizes.fontSizeLg,
+          fontWeight: FontWeight.w600,
+          color: CusColors.textWhite),
       shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(Radius.circular(CusSizes.borderRadiusLg)),
+        borderRadius:
+            BorderRadius.all(Radius.circular(CusSizes.borderRadiusLg)),
       ),
     ),
   );
@@ -32,18 +35,20 @@ class CusElevatedButtonTheme {
     style: ElevatedButton.styleFrom(
       elevation: 0,
       foregroundColor: CusColors.primaryBackground,
-      backgroundColor: CusColors.buttonPrimary,
+      backgroundColor: CusColors.buttonSecondary,
       disabledBackgroundColor: CusColors.buttonDisabled,
       disabledForegroundColor: CusColors.buttonDisabled,
       side: const BorderSide(
-        color: CusColors.borderPrimary,
-        width: 1,
+        width: 0,
       ),
-      padding: const EdgeInsets.all(CusSizes.xs),
+      padding: const EdgeInsets.all(CusSizes.sm),
       textStyle: const TextStyle(
-          fontSize: CusSizes.fontSizeMd, fontWeight: FontWeight.w600, color: CusColors.textWhite),
+          fontSize: CusSizes.fontSizeLg,
+          fontWeight: FontWeight.w600,
+          color: CusColors.textWhite),
       shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(Radius.circular(CusSizes.borderRadiusLg)),
+        borderRadius:
+            BorderRadius.all(Radius.circular(CusSizes.borderRadiusLg)),
       ),
     ),
   );

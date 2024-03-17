@@ -1,3 +1,4 @@
+import 'package:arcane/features/authentication/screens/login/login.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
@@ -29,7 +30,7 @@ class OnBoardingController extends GetxController {
           duration: const Duration(milliseconds: 300),
           curve: Curves.easeInOutCubicEmphasized);
     } else {
-      // Get.offNamed('/login');
+      Get.offAll(const LoginScreen());
     }
   }
 
