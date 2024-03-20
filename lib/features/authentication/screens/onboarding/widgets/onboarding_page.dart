@@ -2,8 +2,6 @@ import 'package:arcane/utils/constants/sizes.dart';
 import 'package:arcane/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
-import 'onboarding_dot_navigator.dart';
-
 class OnBoardingPage extends StatelessWidget {
   const OnBoardingPage({
     super.key,

@@ -1,8 +1,10 @@
+import 'package:arcane/features/authentication/screens/signup/signup.dart';
 import 'package:arcane/utils/constants/colors.dart';
 import 'package:arcane/utils/constants/sizes.dart';
 import 'package:arcane/utils/constants/text_strings.dart';
 import 'package:arcane/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class LoginForm extends StatelessWidget {
@@ -26,8 +28,8 @@ class LoginForm extends StatelessWidget {
               labelText: CusTexts.email,
             ),
           ),
-
           const SizedBox(height: CusSizes.spaceBtwInputFields),
+
           //   password
           TextFormField(
             decoration: const InputDecoration(
@@ -37,6 +39,7 @@ class LoginForm extends StatelessWidget {
             ),
           ),
           const SizedBox(height: CusSizes.sm),
+
           //   remember me and forgot password
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -60,13 +63,41 @@ class LoginForm extends StatelessWidget {
                   ),
                 ),
                 child: Text(CusTexts.forgetPassword,
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
                           color: isDark
                               ? CusColors.textWhite
                               : CusColors.textSecondary,
                         )),
               )
             ],
+          ),
+          const SizedBox(height: CusSizes.spaceBtwSections),
+
+          //   login button
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.all(CusSizes.md),
+              ),
+              child: const Text(CusTexts.signIn),
+            ),
+          ),
+          const SizedBox(height: CusSizes.spaceBtwItems),
+
+          //   create account
+          SizedBox(
+            width: double.infinity,
+            child: OutlinedButton(
+              onPressed: () {
+                Get.to(() => const SignupScreen());
+              },
+              style: OutlinedButton.styleFrom(
+                padding: const EdgeInsets.all(CusSizes.md),
+              ),
+              child: const Text(CusTexts.createAccount),
+            ),
           ),
         ]),
       ),

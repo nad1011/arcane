@@ -5,7 +5,7 @@ class CusTexts {
   static const String done = "Done";
   static const String submit = "Submit";
   static const String appName = "Arcane";
-  static const String tContinue = "Continue";
+  static const String cusContinue = "Continue";
 
   // -- OnBoarding
   static const String onBoardingTitle1 = "Choose your product";

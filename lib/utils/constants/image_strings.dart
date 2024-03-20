@@ -53,6 +53,8 @@ class CusImages {
       "assets/images/animations/sammy-line-man-receives-a-mail.png";
   static const String verifyIllustration =
       "assets/images/animations/sammy-line-travel-backpack-with-passport-and-air-ticket.gif";
+  static const String carryingGiftIllustration =
+      "assets/images/animations/sammy-line-man-carrying-a-christmas-tree.gif";
 
   // -- OnBoarding Texts
   static const String onBoardingImage1 =

@@ -38,7 +38,7 @@ class CusCheckboxTheme {
     }),
     fillColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
-        return CusColors.primary;
+        return CusColors.buttonSecondary;
       } else {
         return Colors.transparent;
       }
