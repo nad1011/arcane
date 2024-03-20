@@ -8,6 +8,10 @@ class CusImages {
   static const String google = "assets/logos/google-icon.png";
   static const String facebook = "assets/logos/facebook-icon.png";
 
+  // banners
+  static const String forgetPasswordBanner =
+      "assets/images/banners/7070628_3275434.jpg";
+
   // -- Category Icons
   static const String sportIcon =
       "assets/icons/categories/icons8-bowling-64.png";

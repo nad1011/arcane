@@ -1,8 +1,8 @@
+import 'package:arcane/features/authentication/screens/password/forget_password.dart';
 import 'package:arcane/features/authentication/screens/signup/signup.dart';
 import 'package:arcane/utils/constants/colors.dart';
 import 'package:arcane/utils/constants/sizes.dart';
 import 'package:arcane/utils/constants/text_strings.dart';
-import 'package:arcane/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -14,8 +14,6 @@ class LoginForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isDark = CusHelperFunctions.isDarkMode(context);
-
     return Form(
       child: Padding(
         padding:
@@ -48,26 +46,20 @@ class LoginForm extends StatelessWidget {
                 children: [
                   Checkbox(value: true, onChanged: (value) {}),
                   Text(CusTexts.rememberMe,
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: isDark
-                                ? CusColors.textWhite
-                                : CusColors.textPrimary,
-                          )),
+                      style: Theme.of(context).textTheme.bodyMedium),
                 ],
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(() => const ForgetPassword());
+                },
                 style: ButtonStyle(
                   overlayColor: MaterialStateProperty.all(
                     CusColors.primary.withOpacity(0.1),
                   ),
                 ),
                 child: Text(CusTexts.forgetPassword,
-                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                          color: isDark
-                              ? CusColors.textWhite
-                              : CusColors.textSecondary,
-                        )),
+                    style: Theme.of(context).textTheme.bodySmall),
               )
             ],
           ),
@@ -78,9 +70,6 @@ class LoginForm extends StatelessWidget {
             width: double.infinity,
             child: ElevatedButton(
               onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.all(CusSizes.md),
-              ),
               child: const Text(CusTexts.signIn),
             ),
           ),
@@ -93,9 +82,6 @@ class LoginForm extends StatelessWidget {
               onPressed: () {
                 Get.to(() => const SignupScreen());
               },
-              style: OutlinedButton.styleFrom(
-                padding: const EdgeInsets.all(CusSizes.md),
-              ),
               child: const Text(CusTexts.createAccount),
             ),
           ),

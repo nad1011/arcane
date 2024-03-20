@@ -18,7 +18,7 @@ class CusElevatedButtonTheme {
         color: CusColors.white,
         width: 0,
       ),
-      padding: const EdgeInsets.all(CusSizes.sm),
+      padding: const EdgeInsets.all(CusSizes.md),
       textStyle: const TextStyle(
           fontSize: CusSizes.fontSizeLg,
           fontWeight: FontWeight.w600,
@@ -41,7 +41,7 @@ class CusElevatedButtonTheme {
       side: const BorderSide(
         width: 0,
       ),
-      padding: const EdgeInsets.all(CusSizes.sm),
+      padding: const EdgeInsets.all(CusSizes.md),
       textStyle: const TextStyle(
           fontSize: CusSizes.fontSizeLg,
           fontWeight: FontWeight.w600,

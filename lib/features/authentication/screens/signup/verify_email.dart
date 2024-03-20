@@ -63,9 +63,6 @@ class VerifyEmailScreen extends StatelessWidget {
                           onPressed: () => Get.to(() => const LoginScreen()),
                         ));
                   },
-                  style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.all(CusSizes.md),
-                  ),
                   child: const Text(CusTexts.cusContinue),
                 ),
               ),

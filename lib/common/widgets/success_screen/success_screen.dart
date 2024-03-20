@@ -56,9 +56,6 @@ class SuccessScreen extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: onPressed,
-                  style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.all(CusSizes.md),
-                  ),
                   child: const Text(CusTexts.cusContinue),
                 ),
               ),

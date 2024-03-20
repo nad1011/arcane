@@ -83,9 +83,6 @@ class SignupForm extends StatelessWidget {
           onPressed: () {
             Get.to(() => const VerifyEmailScreen());
           },
-          style: OutlinedButton.styleFrom(
-            padding: const EdgeInsets.all(CusSizes.md),
-          ),
           child: const Text(CusTexts.createAccount),
         ),
       ),

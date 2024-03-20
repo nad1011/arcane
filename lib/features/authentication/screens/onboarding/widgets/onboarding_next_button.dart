@@ -52,7 +52,6 @@ class _OnBoardingNextButtonState extends State<OnBoardingNextButton> {
             },
             style: ElevatedButton.styleFrom(
               shape: _shape,
-              padding: const EdgeInsets.all(CusSizes.md),
             ),
             child: _showText
                 ? Text('Get Started',
@@ -60,6 +59,7 @@ class _OnBoardingNextButtonState extends State<OnBoardingNextButton> {
                         .textTheme
                         .bodySmall
                         ?.copyWith(color: CusColors.white))
-                : const Icon(Icons.arrow_forward_ios_rounded, color: CusColors.white)));
+                : const Icon(Icons.arrow_forward_ios_rounded,
+                    color: CusColors.white)));
   }
 }
