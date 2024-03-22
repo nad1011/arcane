@@ -1,5 +1,6 @@
 import 'package:arcane/features/authentication/screens/password/forget_password.dart';
 import 'package:arcane/features/authentication/screens/signup/signup.dart';
+import 'package:arcane/nav_bar.dart';
 import 'package:arcane/utils/constants/colors.dart';
 import 'package:arcane/utils/constants/sizes.dart';
 import 'package:arcane/utils/constants/text_strings.dart';
@@ -69,7 +70,9 @@ class LoginForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.to(() => const NavBar());
+              },
               child: const Text(CusTexts.signIn),
             ),
           ),

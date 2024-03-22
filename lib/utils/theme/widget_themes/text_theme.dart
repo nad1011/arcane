@@ -41,12 +41,16 @@ class CusTextTheme {
         color: CusColors.textPrimary.withOpacity(0.5)),
     labelLarge: const TextStyle().copyWith(
         fontSize: 12,
-        fontWeight: FontWeight.w500,
+        fontWeight: FontWeight.w600,
         color: CusColors.textSecondary),
     labelMedium: const TextStyle().copyWith(
         fontSize: 12,
-        fontWeight: FontWeight.normal,
+        fontWeight: FontWeight.w500,
         color: CusColors.textSecondary.withOpacity(0.8)),
+    labelSmall: const TextStyle().copyWith(
+        fontSize: 12,
+        fontWeight: FontWeight.normal,
+        color: CusColors.textSecondary.withOpacity(0.5)),
   );
 
   static final darkTheme = TextTheme(
@@ -77,6 +81,10 @@ class CusTextTheme {
         fontWeight: FontWeight.normal,
         color: CusColors.textPrimary),
     labelMedium: const TextStyle().copyWith(
+        fontSize: 12,
+        fontWeight: FontWeight.normal,
+        color: CusColors.textPrimary.withOpacity(0.5)),
+    labelSmall: const TextStyle().copyWith(
         fontSize: 12,
         fontWeight: FontWeight.normal,
         color: CusColors.textPrimary.withOpacity(0.5)),
