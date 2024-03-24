@@ -12,12 +12,12 @@ class CusTextTheme {
         fontWeight: FontWeight.w600,
         color: CusColors.textPrimary),
     headlineSmall: const TextStyle().copyWith(
-        fontSize: 18,
+        fontSize: 20,
         fontWeight: FontWeight.w600,
         color: CusColors.textPrimary),
     titleLarge: const TextStyle().copyWith(
         fontSize: 18,
-        fontWeight: FontWeight.w600,
+        fontWeight: FontWeight.w500,
         color: CusColors.textSecondary),
     titleMedium: const TextStyle().copyWith(
         fontSize: 16,
@@ -59,9 +59,9 @@ class CusTextTheme {
     headlineMedium: const TextStyle().copyWith(
         fontSize: 24, fontWeight: FontWeight.w600, color: CusColors.textWhite),
     headlineSmall: const TextStyle().copyWith(
-        fontSize: 18, fontWeight: FontWeight.w600, color: CusColors.textWhite),
+        fontSize: 20, fontWeight: FontWeight.w600, color: CusColors.textWhite),
     titleLarge: const TextStyle().copyWith(
-        fontSize: 16, fontWeight: FontWeight.w600, color: CusColors.textWhite),
+        fontSize: 18, fontWeight: FontWeight.w500, color: CusColors.textWhite),
     titleMedium: const TextStyle().copyWith(
         fontSize: 16, fontWeight: FontWeight.w500, color: CusColors.textWhite),
     titleSmall: const TextStyle().copyWith(

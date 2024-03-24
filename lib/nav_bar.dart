@@ -1,3 +1,4 @@
+import 'package:arcane/features/shop/screens/home/home.dart';
 import 'package:arcane/utils/constants/colors.dart';
 import 'package:arcane/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
@@ -13,33 +14,46 @@ class NavBar extends StatelessWidget {
     final isDark = CusHelperFunctions.isDarkMode(context);
 
     return Scaffold(
-      bottomNavigationBar: Obx(
-        () => NavigationBar(
-          elevation: 0,
-          selectedIndex: controller.currentIndex.value,
-          backgroundColor: isDark ? Colors.black : Colors.white,
-          indicatorColor: isDark
-              ? CusColors.white.withOpacity(0.2)
-              : CusColors.primary.withOpacity(0.2),
-          onDestinationSelected: (index) {
-            controller.currentIndex.value = index;
-          },
-          destinations: const [
-            NavigationDestination(
-              icon: Icon(Iconsax.home_hashtag),
-              label: 'Home',
+      bottomNavigationBar: SizedBox(
+        height: 70,
+        child: Obx(
+          () => Theme(
+            data: ThemeData(
+              splashColor: CusColors.primary.withOpacity(0.1),
+              highlightColor: Colors.transparent,
             ),
-            NavigationDestination(
-              icon: Icon(Iconsax.shopping_cart),
-              label: 'Shop',
+            child: BottomNavigationBar(
+              elevation: 0,
+              type: BottomNavigationBarType.shifting,
+              backgroundColor: isDark ? Colors.black : CusColors.softGrey,
+              currentIndex: controller.currentIndex.value,
+              onTap: (index) {
+                controller.currentIndex.value = index;
+              },
+              mouseCursor: SystemMouseCursors.click,
+              selectedItemColor:
+                  isDark ? Colors.white : CusColors.buttonPrimary,
+              unselectedItemColor: isDark ? Colors.white : CusColors.darkGrey,
+              items: const <BottomNavigationBarItem>[
+                BottomNavigationBarItem(
+                  icon: Icon(Iconsax.home_hashtag),
+                  label: 'Home',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Iconsax.shopping_cart),
+                  label: 'Shop',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Iconsax.heart_circle),
+                  label: 'Favorites',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Iconsax.user),
+                  label: 'Profile',
+                ),
+              ],
             ),
-            NavigationDestination(
-                icon: Icon(Iconsax.heart_circle), label: 'Wishlist'),
-            NavigationDestination(
-              icon: Icon(Iconsax.user),
-              label: 'Profile',
-            ),
-          ],
+          ),
         ),
       ),
       body: Obx(() => controller.screens[controller.currentIndex.value]),
@@ -51,9 +65,7 @@ class NavController extends GetxController {
   final Rx<int> currentIndex = 0.obs;
 
   final List<Widget> screens = [
-    Container(
-      color: Colors.grey,
-    ),
+    const HomeScreen(),
     Container(
       color: Colors.yellow,
     ),
