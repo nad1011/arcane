@@ -1,4 +1,5 @@
 import 'package:arcane/common/widgets/shapes/containers/cicular_container.dart';
+import 'package:arcane/common/widgets/shapes/curved_edges/curved_edges.dart';
 import 'package:arcane/utils/constants/colors.dart';
 import 'package:arcane/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
@@ -13,11 +14,12 @@ class PrimaryHeaderContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipRRect(
-      borderRadius: const BorderRadius.only(
-        bottomLeft: Radius.circular(CusSizes.borderRadiusXl),
-        bottomRight: Radius.circular(CusSizes.borderRadiusXl),
-      ),
+    return ClipPath(
+      // borderRadius: const BorderRadius.only(
+      //   bottomLeft: Radius.circular(CusSizes.borderRadiusXl),
+      //   bottomRight: Radius.circular(CusSizes.borderRadiusXl),
+      // ),
+      clipper: CusCurvedEdges(),
       child: Container(
         color: CusColors.buttonPrimary,
         padding: const EdgeInsets.only(bottom: CusSizes.lg),
